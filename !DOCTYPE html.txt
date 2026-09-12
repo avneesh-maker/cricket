@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Encyclopedia</title>
+    <style>
+        :root {
+            --primary: #004d40; /* Deep Cricket Green */
+            --accent: #ffd700;  /* Trophy Gold */
+            --bg: #f4f7f6;
+            --card-bg: rgba(255, 255, 255, 0.9);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #00695c);
+            color: white;
+            padding: 40px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            padding: 8px 0;
+            border-bottom: 1px thin #eee;
+        }
+
+        .card li b { color: var(--primary); }
+
+        /* Special highlight border for the formats card */
+        .highlight { border: 2px solid var(--accent); }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏏 The World of Cricket</h1>
+        <p>Exploring the Gentleman's Game: History, Rules, and Equipment</p>
+    </header>
+
+    <div class="container">
+        <!-- History Section -->
+        <div class="card">
+            <h2>📜 History</h2>
+            <ul>
+                <li><b>Origin:</b> 16th-century South East England.</li>
+                <li><b>First International:</b> USA vs Canada (1844).</li>
+                <li><b>Governing Body:</b> ICC (founded 1909).</li>
+                <li><b>The Ashes:</b> Famous rivalry since 1882.</li>
+            </ul>
+        </div>
+
+        <!-- Formats Section -->
+        <div class="card highlight">
+            <h2>🏆 Major Formats</h2>
+            <ul>
+                <li><b>Test Cricket:</b> Traditional 5-day format.</li>
+                <li><b>ODI:</b> 50 overs per side.</li>
+                <li><b>T20:</b> Fast-paced 20-over game.</li>
+                <li><b>T10/The Hundred:</b> Modern short-form variants.</li>
+            </ul>
+        </div>
+
+        <!-- Equipment Section -->
+        <div class="card">
+            <h2>⚔️ Equipment</h2>
+            <ul>
+                <li><b>Ball:</b> Hard leather-seamed spheroid (Red, White, or Pink).</li>
+                <li><b>Bat:</b> Made of white willow wood.</li>
+                <li><b>Wicket:</b> 3 stumps and 2 bails.</li>
+                <li><b>Protection:</b> Helmets, pads, and gloves.</li>
+            </ul>
+        </div>
+
+        <!-- Rules Section -->
+        <div class="card">
+            <h2>⚖️ Key Rules</h2>
+            <ul>
+                <li><b>Teams:</b> 11 players per side.</li>
+                <li><b>Overs:</b> Set of 6 legal deliveries.</li>
+                <li><b>Boundaries:</b> 4 runs (hits ground) or 6 runs (clears rope).</li>
+                <li><b>Dismissal:</b> Bowled, caught, LBW, or run out.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        Data compiled from authoritative sports sources.
+    </footer>
+
+</body>
+</html>
+  
+  
+  
+  
